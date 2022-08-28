@@ -311,7 +311,7 @@ footer p a {
 
 @media screen and (max-width: 1000px) {
     main {
-        padding: 40px;
+        padding: 20px;
     }
 
     main .button {
