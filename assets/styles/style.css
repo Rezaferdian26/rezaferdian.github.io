@@ -1,0 +1,415 @@
+@font-face {
+    font-family: 'SF Mono Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Regular'), url('../fonts/SFMonoRegular.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #09092d;
+    color: white;
+}
+
+.button {
+    padding: 10px;
+    border: 2px solid #fb9de9;
+    border-radius: 5px;
+    background-color: blue;
+    font-family: 'SF Mono Regular';
+    transition: .3s;
+}
+
+.button:hover {
+    border-color: #67d3ff;
+    box-shadow: -5px 5px 50px blue;
+}
+
+header#home {
+    background-color: rgb(158, 158, 158);
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    background-blend-mode: multiply;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(9, 9, 45, .5);
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #09092d;
+}
+
+nav .logo {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    margin-right: 10px;
+    display: none;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fb9de9;
+}
+
+a {
+    font-family: 'SF Mono Regular';
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    text-shadow: #67d3ff 0 0 8px, #67d3ff 0 0 8px, #67d3ff 0 0 8px;
+    /* color: #ffb9f2; */
+}
+
+section.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 600px;
+}
+
+section.hero h1 {
+    color: white;
+    text-shadow: red 0 0 8px, red 0 0 8px, red 0 0 8px;
+    font-size: 3.5em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+section.hero p {
+    color: white;
+    font-size: 1.1em;
+}
+
+.thumbnail img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #fb9de9;
+    box-shadow: -5px 5px 50px red;
+}
+
+img.logo {
+    width: 50px;
+}
+
+main {
+    padding: 80px 135px;
+}
+
+.card {
+    box-shadow: 1px 1px 20px 0 #9f037e;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#about {
+    display: flex;
+}
+
+#about section {
+    margin-left: 20px;
+}
+
+.img-article {
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+main h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+
+article#about p {
+    margin-bottom: 40px;
+    line-height: 25px;
+    color: #bebebe;
+}
+
+hr {
+    width: 60px;
+    border-color: red;
+    margin-bottom: 20px;
+}
+
+#edu section {
+    margin-bottom: 20px;
+}
+
+#edu section .content-edu {
+    display: flex;
+}
+
+#edu section .content-edu .isi {
+    margin-left: 20px;
+    line-height: 25px;
+    color: #bebebe;
+}
+
+h3 {
+    color: #67d3ff;
+    margin: 20px 0 5px 0;
+}
+
+h3 span {
+    color: #bebebe;
+    font-size: .8em;
+    margin-left: 5px;
+}
+
+.box {
+    display: flex;
+    margin-top: 20px;
+    line-height: 30px;
+    border: 1px solid #67d3ff;
+    padding: 20px;
+}
+
+.box span {
+    font-weight: bold;
+}
+
+.box .left {
+    margin-right: 80px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+form .container-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 10px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid #fb9de9;
+    background-color: transparent;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+button {
+    display: inline-block;
+    color: white;
+}
+
+.element-center {
+    margin: 0 auto;
+}
+
+aside hr {
+    width: 110px;
+    height: 5px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+#contact {
+    padding: 20px 60px;
+}
+
+#contact hr {
+    width: 210px;
+    height: 5px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+.img-profile img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+section.biodata {
+    max-width: 400px;
+}
+
+section.biodata h5 {
+    font-size: 1em;
+    border-left: 5px solid #fb9de9;
+    padding-left: 5px;
+    margin-bottom: 8px;
+}
+
+section.biodata p {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #040615;
+}
+
+footer p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer p a {
+    font-family: "SF Mono Regular";
+    font-size: .8em;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        padding: 40px;
+    }
+
+    main .button {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about img {
+        margin: 0px auto 20px auto;
+    }
+
+    #about h1 {
+        text-align: center;
+    }
+
+    #about hr {
+        margin: 0 auto 20px auto;
+        width: 140px;
+
+    }
+
+    #edu section .content-edu {
+        flex-direction: column;
+
+    }
+
+    #edu .header h3 {
+        text-align: center;
+    }
+
+    #edu .header hr {
+        margin: 0 auto 20px auto;
+    }
+
+    #edu .header hr.sd {
+        width: 185px;
+    }
+
+    #edu .header hr.mtsn {
+        width: 205px;
+    }
+
+    #edu .header hr.man {
+        width: 200px;
+    }
+
+    #edu .header hr.univ {
+        width: 190px;
+    }
+
+    #edu section .content-edu .img-article {
+        margin: 0 auto 20px auto;
+    }
+
+    .content-edu .box {
+        margin-bottom: 40px;
+    }
+
+    .box {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    nav ul {
+        position: fixed;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: #040615;
+        height: 100%;
+        width: 60%;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all .5s;
+    }
+
+    .side-menu {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    #home h1 {
+        font-size: 2.5em;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+}
