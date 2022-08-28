@@ -19,6 +19,7 @@ body {
     color: white;
 }
 
+
 .button {
     padding: 10px;
     border: 2px solid #fb9de9;
@@ -157,7 +158,7 @@ main {
 
 .img-article {
     width: 300px;
-    height: 300px;
+    height: auto;
     border: 10px solid black;
     border-radius: 5px;
     object-fit: cover;
@@ -316,6 +317,7 @@ footer p a {
 
     main .button {
         display: inline-block;
+        margin: 0 auto 20px auto;
         margin-bottom: 20px;
     }
 
@@ -334,7 +336,11 @@ footer p a {
     #about hr {
         margin: 0 auto 20px auto;
         width: 140px;
+    }
 
+    #about section {
+        display: flex;
+        flex-direction: column;
     }
 
     #edu section .content-edu {
@@ -377,6 +383,10 @@ footer p a {
     .box {
         margin-right: 20px;
     }
+
+    hr {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -384,6 +394,11 @@ footer p a {
         display: flex;
         cursor: pointer;
         z-index: 99;
+    }
+
+    .img-article {
+        width: 100%;
+        height: auto;
     }
 
     nav ul {
@@ -411,5 +426,10 @@ footer p a {
 
     .box {
         flex-direction: column;
+    }
+
+    #profile img {
+        width: 100%;
+        height: auto;
     }
 }
